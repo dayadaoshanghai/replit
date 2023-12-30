@@ -10,9 +10,7 @@ def add_game():
   item = input("Input the item to add:>")
   List.append(item)
   print(f"{item} has been added to your inventory")
-  f = open("game.exe", "w")
-  f.write(str(List))
-  f.close()
+  
 
 def view_game():
   item = input("Input the item to view:>")
@@ -39,3 +37,6 @@ while True:
      view_game()
     else:
      print("Invalid choice") 
+    f = open("game.exe", "w")
+    f.write(str(List))
+    f.close()

@@ -91,7 +91,7 @@ while True:
     removeList(List)
 
   ## 创建备份
-  backupList()
+  backupList(List)
   
   f = open("todo.txt", "w")
   f.write(str(List))
